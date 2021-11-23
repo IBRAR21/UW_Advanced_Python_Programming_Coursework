@@ -1,0 +1,44 @@
+2021-08-18 00:05:08.177 | DEBUG    | __main__:<module>:156 - __name__:__main__
+2021-08-18 00:05:08.185 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-18 00:05:08.186 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-18 00:06:08.494 | INFO     | users:add_user:29 - New User added: (abc_01, abc.xyz@gmail.com, abc, xyz)
+2021-08-18 00:06:41.056 | INFO     | users:modify_user:48 - User modified - new_email:abc.xyz@test.com, new_user_name:abc, new_user_last_name: xyz)
+2021-08-18 00:06:48.718 | INFO     | users:search_user:84 - abc_01 found in search database.
+2021-08-18 00:06:48.719 | ERROR    | __main__:<module>:197 - An error has been caught in function '<module>', process 'MainProcess' (11463), thread 'MainThread' (4592479744):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 195, in <module>
+    menu_options[user_selection]()
+    │            └ 'E'
+    └ {'A': <function load_users at 0x7f824c107790>, 'B': <function load_status_updates at 0x7f824c107700>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 78, in search_user
+    print(f"User ID: {result.user_id}")
+
+AttributeError: 'UsersTable' object has no attribute 'user_id'
+2021-08-18 00:08:00.355 | DEBUG    | __main__:<module>:156 - __name__:__main__
+2021-08-18 00:08:00.362 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-18 00:08:00.362 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-18 00:08:08.693 | INFO     | users:search_user:84 - abc_01 found in search database.
+2021-08-18 00:08:29.937 | INFO     | user_status:add_status:25 - New Status added: (abc_0001, abc_01, test message)
+2021-08-18 00:08:38.570 | INFO     | user_status:search_status:69 - abc_0001 found in search database.
+2021-08-18 00:09:17.611 | WARNING  | user_status:modify_status:44 - status_id:abc_0001 doesn't exist and cannot be modified.
+2021-08-18 00:10:41.703 | INFO     | users:delete_user:68 - abc_01 deleted from database.
+2021-08-18 00:12:08.710 | INFO     | user_status:add_status:25 - New Status added: (abc_0001, abc_01, test message)
+2021-08-18 12:34:39.939 | DEBUG    | __main__:<module>:156 - __name__:__main__
+2021-08-18 12:34:39.952 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-18 12:34:39.952 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-18 12:36:41.885 | INFO     | users:add_user:29 - New User added: (, , , )
+2021-08-18 12:40:11.885 | INFO     | users:add_user:29 - New User added: (abc_01, abc.xyz@gmail.com, abc, xyz)
+2021-08-18 12:40:37.264 | INFO     | users:modify_user:48 - User modified - new_email:abc.xyz@test.com, new_user_name:abc, new_user_last_name: xyz)
+2021-08-18 12:41:08.528 | INFO     | users:search_user:84 - abc_01 found in search database.
+2021-08-18 12:41:15.199 | INFO     | users:search_user:84 -  found in search database.
+2021-08-18 12:41:53.532 | WARNING  | user_status:add_status:28 - status_id:abc_0001 already existed in the database. Another entry cannot be made.
+2021-08-18 12:42:46.893 | INFO     | user_status:add_status:25 - New Status added: (abc_0001, abc_01, test message2)
+2021-08-18 12:42:57.161 | INFO     | user_status:search_status:69 - abc_0001 found in search database.
+2021-08-18 12:43:06.177 | INFO     | users:delete_user:68 - abc_01 deleted from database.
+2021-08-18 12:43:14.234 | WARNING  | user_status:search_status:71 - status_id:abc_0001 not found in the database.
+2021-08-18 12:46:25.677 | DEBUG    | __main__:<module>:156 - __name__:__main__
+2021-08-18 12:46:25.682 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-18 12:46:25.683 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-18 12:46:31.626 | WARNING  | users:add_user:32 - user_id: already existed in the database. Another entry cannot be made.

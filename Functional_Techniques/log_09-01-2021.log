@@ -1,0 +1,311 @@
+2021-09-01 12:44:23.997 | DEBUG    | __main__:<module>:155 - __name__:__main__
+2021-09-01 12:44:44.971 | INFO     | users:add_user:44 - New User added: (abc_01, abc.xyz@gmail.com, abc, xyz)
+2021-09-01 12:44:54.584 | INFO     | users:search_user:90 - abc_01 found in search database.
+2021-09-01 12:44:54.584 | ERROR    | __main__:<module>:190 - An error has been caught in function '<module>', process 'MainProcess' (61072), thread 'MainThread' (4603739648):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/menu.py", line 188, in <module>
+    menu_options[user_selection]()
+    │            └ 'E'
+    └ {'A': <function load_users at 0x7fd05820f1f0>, 'B': <function load_status_updates at 0x7fd05820f280>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/menu.py", line 79, in search_user
+    print(f"User ID: {result.id}")
+
+AttributeError: 'dict' object has no attribute 'id'
+2021-09-01 12:46:48.186 | DEBUG    | __main__:<module>:155 - __name__:__main__
+2021-09-01 12:47:20.067 | INFO     | users:search_user:90 - abc_01 found in search database.
+2021-09-01 12:47:42.638 | INFO     | users:modify_user:63 - User abc_01 modified - new_email:abc.xyz@test.com, new_user_name:abc, new_user_last_name: xyz)
+2021-09-01 12:48:16.700 | WARNING  | users:add_user:47 - user_id:abc_01 entry could not be made.
+2021-09-01 12:49:11.632 | INFO     | users:delete_user:78 - abc_01 deleted from database.
+2021-09-01 12:49:17.623 | WARNING  | users:search_user:93 - user_id:abc_01 not found in the database.
+2021-09-01 12:49:44.571 | DEBUG    | users:check_user_constraints:26 - email: entry cannot be blank.
+2021-09-01 13:53:59.170 | DEBUG    | __main__:<module>:155 - __name__:__main__
+2021-09-01 13:54:45.531 | INFO     | users:add_user:44 - New User added: (abc_o1, abc.xyz@test.com, abc, xyz)
+2021-09-01 13:56:57.445 | DEBUG    | __main__:<module>:155 - __name__:__main__
+2021-09-01 13:57:10.771 | INFO     | users:search_user:90 - abc_o1 found in search database.
+2021-09-01 13:58:09.191 | DEBUG    | user_status:check_status_constraints:29 - user_id:test message doesn't exist and status cannot be added.
+2021-09-01 14:04:15.011 | DEBUG    | user_status:check_status_constraints:29 - user_id:test message doesn't exist and status cannot be added.
+2021-09-01 14:05:42.900 | DEBUG    | user_status:check_status_constraints:29 - user_id:test message doesn't exist and status cannot be added.
+2021-09-01 14:05:52.950 | DEBUG    | __main__:<module>:155 - __name__:__main__
+2021-09-01 14:06:11.481 | INFO     | user_status:add_status:42 - New Status added: (abc01, abc_o1, test message)
+2021-09-01 14:06:39.080 | INFO     | user_status:modify_status:58 -  status_id: abc01 modified -  new_status_text:test message)
+2021-09-01 14:06:45.588 | INFO     | user_status:search_status:76 - abc01 found in search database.
+2021-09-01 14:06:55.341 | INFO     | users:delete_user:78 - abc_o1 deleted from database.
+2021-09-01 14:07:03.064 | WARNING  | user_status:search_status:79 - status_id:abc01 not found in the database.
+2021-09-01 15:42:01.968 | DEBUG    | __main__:<module>:159 - __name__:__main__
+2021-09-01 15:42:06.551 | ERROR    | __main__:<module>:194 - An error has been caught in function '<module>', process 'MainProcess' (62135), thread 'MainThread' (4527758848):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/menu.py", line 192, in <module>
+    menu_options[user_selection]()
+    │            └ 'K'
+    └ {'A': <function load_users at 0x7fca1d9f7040>, 'B': <function load_status_updates at 0x7fca1d9f70d0>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/menu.py", line 153, in quit_program
+    if os.path.exists(file):
+                      └ 'socialnetwork.db'
+
+NameError: name 'os' is not defined
+2021-09-01 15:43:03.426 | DEBUG    | __main__:<module>:160 - __name__:__main__
+2021-09-01 15:57:50.638 | DEBUG    | __main__:<module>:160 - __name__:__main__
+2021-09-01 15:59:45.080 | DEBUG    | __main__:<module>:160 - __name__:__main__
+2021-09-01 15:59:52.954 | ERROR    | __main__:<module>:195 - An error has been caught in function '<module>', process 'MainProcess' (62361), thread 'MainThread' (4406423040):
+Traceback (most recent call last):
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Gentry', 'Brittaney', 'Brittaney.Gentry86@goodmail.com']
+    │      │       └ 'INSERT INTO "UsersTable" ("user_id", "user_last_name", "user_name", "email") VALUES (?, ?, ?, ?)'
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7ff9dc19b810>
+
+sqlite3.IntegrityError: UNIQUE constraint failed: UsersTable.user_id
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/main.py", line 34, in load_users
+    user_collection.insert(user_id = row['USER_ID'],
+    │               │                └ {'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}
+    │               └ <function Table.insert at 0x7ff9dc19e5e0>
+    └ <Table: UsersTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/playhouse/dataset.py", line 273, in insert
+    return self.model_class.insert(**data).execute()
+           │    │                    └ {'user_id': 'Brittaney.Gentry86', 'user_name': 'Brittaney', 'user_last_name': 'Gentry', 'email': 'Brittaney.Gentry86@goodmail...
+           │    └ <property object at 0x7ff9dc196f90>
+           └ <Table: UsersTable>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7ff9dbf21f10>
+           │      └ <peewee.ModelInsert object at 0x7ff9dc1bed60>
+           └ <function BaseQuery.execute at 0x7ff9dc0d8160>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7ff9dbf21f10>
+           │    └ <function Insert._execute at 0x7ff9dc0e33a0>
+           └ <peewee.ModelInsert object at 0x7ff9dc1bed60>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7ff9dbf21f10>
+                 │       └ <peewee.ModelInsert object at 0x7ff9dc1bed60>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7ff9dc1bed60>
+             │        └ <function Database.execute at 0x7ff9dc0eeaf0>
+             └ <peewee.SqliteDatabase object at 0x7ff9dbf21f10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3157, in execute
+    return self.execute_sql(sql, params, commit=commit)
+           │    │           │    │              └ <object object at 0x7ff9dc093080>
+           │    │           │    └ ['Brittaney.Gentry86', 'Gentry', 'Brittaney', 'Brittaney.Gentry86@goodmail.com']
+           │    │           └ 'INSERT INTO "UsersTable" ("user_id", "user_last_name", "user_name", "email") VALUES (?, ?, ?, ?)'
+           │    └ <function Database.execute_sql at 0x7ff9dc0eea60>
+           └ <peewee.SqliteDatabase object at 0x7ff9dbf21f10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3151, in execute_sql
+    self.commit()
+    │    └ <function Database.commit at 0x7ff9dc0ef790>
+    └ <peewee.SqliteDatabase object at 0x7ff9dbf21f10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2917, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+    │       │         │        │           │          └ <traceback object at 0x7ff9dc1d7b40>
+    │       │         │        │           └ ('UNIQUE constraint failed: UsersTable.user_id',)
+    │       │         │        └ IntegrityError('UNIQUE constraint failed: UsersTable.user_id')
+    │       │         └ <class 'peewee.IntegrityError'>
+    │       └ <class 'peewee.IntegrityError'>
+    └ <function reraise at 0x7ff9dc0b0e50>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 190, in reraise
+    raise value.with_traceback(tb)
+          │     │              └ <traceback object at 0x7ff9dc1d7b40>
+          │     └ <method 'with_traceback' of 'BaseException' objects>
+          └ IntegrityError('UNIQUE constraint failed: UsersTable.user_id')
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Gentry', 'Brittaney', 'Brittaney.Gentry86@goodmail.com']
+    │      │       └ 'INSERT INTO "UsersTable" ("user_id", "user_last_name", "user_name", "email") VALUES (?, ?, ?, ?)'
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7ff9dc19b810>
+
+peewee.IntegrityError: UNIQUE constraint failed: UsersTable.user_id
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/menu.py", line 193, in <module>
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7ff9dc1d3310>, 'B': <function load_status_updates at 0x7ff9dc1d3280>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/menu.py", line 26, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <Table: UsersTable>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7ff9db9c2700>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment_08/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/main.py", line 39, in load_users
+    logger.warning(f"user_id:{user_id} already existed. Duplicate entry cannot be made.")
+    │      └ <function Logger.warning at 0x7ff9dbf24d30>
+    └ <loguru.logger handlers=[(id=1, level=10, sink='log_{time:MM-DD-YYYY}.log')]>
+
+NameError: name 'user_id' is not defined
+2021-09-01 16:00:52.997 | DEBUG    | __main__:<module>:160 - __name__:__main__
+2021-09-01 16:01:00.146 | ERROR    | __main__:<module>:195 - An error has been caught in function '<module>', process 'MainProcess' (62378), thread 'MainThread' (4663737856):
+Traceback (most recent call last):
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Gentry', 'Brittaney', 'Brittaney.Gentry86@goodmail.com']
+    │      │       └ 'INSERT INTO "UsersTable" ("user_id", "user_last_name", "user_name", "email") VALUES (?, ?, ?, ?)'
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7fb04d9bd8f0>
+
+sqlite3.IntegrityError: UNIQUE constraint failed: UsersTable.user_id
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/main.py", line 34, in load_users
+    user_collection.insert(user_id = row['USER_ID'],
+    │               │                └ {'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}
+    │               └ <function Table.insert at 0x7fb04d9c05e0>
+    └ <Table: UsersTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/playhouse/dataset.py", line 273, in insert
+    return self.model_class.insert(**data).execute()
+           │    │                    └ {'user_id': 'Brittaney.Gentry86', 'user_name': 'Brittaney', 'user_last_name': 'Gentry', 'email': 'Brittaney.Gentry86@goodmail...
+           │    └ <property object at 0x7fb04d9b8f90>
+           └ <Table: UsersTable>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7fb04bf26f10>
+           │      └ <peewee.ModelInsert object at 0x7fb04d9dfd60>
+           └ <function BaseQuery.execute at 0x7fb04d8fa160>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7fb04bf26f10>
+           │    └ <function Insert._execute at 0x7fb04d9043a0>
+           └ <peewee.ModelInsert object at 0x7fb04d9dfd60>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7fb04bf26f10>
+                 │       └ <peewee.ModelInsert object at 0x7fb04d9dfd60>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7fb04d9dfd60>
+             │        └ <function Database.execute at 0x7fb04d910af0>
+             └ <peewee.SqliteDatabase object at 0x7fb04bf26f10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3157, in execute
+    return self.execute_sql(sql, params, commit=commit)
+           │    │           │    │              └ <object object at 0x7fb04d8b4080>
+           │    │           │    └ ['Brittaney.Gentry86', 'Gentry', 'Brittaney', 'Brittaney.Gentry86@goodmail.com']
+           │    │           └ 'INSERT INTO "UsersTable" ("user_id", "user_last_name", "user_name", "email") VALUES (?, ?, ?, ?)'
+           │    └ <function Database.execute_sql at 0x7fb04d910a60>
+           └ <peewee.SqliteDatabase object at 0x7fb04bf26f10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3151, in execute_sql
+    self.commit()
+    │    └ <function Database.commit at 0x7fb04d911790>
+    └ <peewee.SqliteDatabase object at 0x7fb04bf26f10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2917, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+    │       │         │        │           │          └ <traceback object at 0x7fb04d9f9a80>
+    │       │         │        │           └ ('UNIQUE constraint failed: UsersTable.user_id',)
+    │       │         │        └ IntegrityError('UNIQUE constraint failed: UsersTable.user_id')
+    │       │         └ <class 'peewee.IntegrityError'>
+    │       └ <class 'peewee.IntegrityError'>
+    └ <function reraise at 0x7fb04d8d2e50>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 190, in reraise
+    raise value.with_traceback(tb)
+          │     │              └ <traceback object at 0x7fb04d9f9a80>
+          │     └ <method 'with_traceback' of 'BaseException' objects>
+          └ IntegrityError('UNIQUE constraint failed: UsersTable.user_id')
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Gentry', 'Brittaney', 'Brittaney.Gentry86@goodmail.com']
+    │      │       └ 'INSERT INTO "UsersTable" ("user_id", "user_last_name", "user_name", "email") VALUES (?, ?, ?, ?)'
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7fb04d9bd8f0>
+
+peewee.IntegrityError: UNIQUE constraint failed: UsersTable.user_id
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/menu.py", line 193, in <module>
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7fb04d9f5280>, 'B': <function load_status_updates at 0x7fb04d9f5310>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/menu.py", line 26, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <Table: UsersTable>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7fb04aeba700>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment_08/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/main.py", line 39, in load_users
+    logger.warning(f"user_id:{user_id} already existed. Duplicate entry cannot be made.")
+    │      └ <function Logger.warning at 0x7fb04bf29d30>
+    └ <loguru.logger handlers=[(id=1, level=10, sink='log_{time:MM-DD-YYYY}.log')]>
+
+NameError: name 'user_id' is not defined
+2021-09-01 16:01:36.571 | DEBUG    | __main__:<module>:160 - __name__:__main__
+2021-09-01 16:02:59.926 | DEBUG    | __main__:<module>:160 - __name__:__main__
+2021-09-01 16:03:14.909 | INFO     | users:add_user:44 - New User added: (abc_01, abc.xyz@test.com, abc, xyz)
+2021-09-01 16:20:25.245 | DEBUG    | __main__:<module>:160 - __name__:__main__
+2021-09-01 16:20:40.585 | ERROR    | __main__:<module>:195 - An error has been caught in function '<module>', process 'MainProcess' (62589), thread 'MainThread' (4735864320):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/menu.py", line 193, in <module>
+    menu_options[user_selection]()
+    │            └ 'B'
+    └ {'A': <function load_users at 0x7ff4b61f6280>, 'B': <function load_status_updates at 0x7ff4b61f6310>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/menu.py", line 37, in load_status_updates
+    if not main.load_status_updates(filename, user_collection, status_collection):
+           │    │                   │         │                └ <Table: StatusTable>
+           │    │                   │         └ <Table: UsersTable>
+           │    │                   └ 'status_updates.csv'
+           │    └ <function load_status_updates at 0x7ff4b61413a0>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment_08/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/main.py", line 64, in load_status_updates
+    return add_status(reader)
+           │          └ <csv.DictReader object at 0x7ff4b61dfca0>
+           └ <function load_status_closure.<locals>.inner_function at 0x7ff4b61f6820>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment_08/main.py", line 73, in inner_function
+    for row in reader:
+               └ <csv.DictReader object at 0x7ff4b61dfca0>
+
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/csv.py", line 110, in __next__
+    self.fieldnames
+    │    └ <property object at 0x7ff4b5244770>
+    └ <csv.DictReader object at 0x7ff4b61dfca0>
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/csv.py", line 97, in fieldnames
+    self._fieldnames = next(self.reader)
+    │    │                  │    └ <_csv.reader object at 0x7ff4b61be890>
+    │    │                  └ <csv.DictReader object at 0x7ff4b61dfca0>
+    │    └ None
+    └ <csv.DictReader object at 0x7ff4b61dfca0>
+
+ValueError: I/O operation on closed file.
+2021-09-01 16:22:56.573 | DEBUG    | __main__:<module>:160 - __name__:__main__

@@ -1,0 +1,1163 @@
+2021-08-17 22:19:58.945 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 22:19:58.957 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 22:19:58.957 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 22:20:15.008 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10052), thread 'MainThread' (4534799872):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7fd515927e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7fd515927940>, 'B': <function load_status_updates at 0x7fd5159278b0>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7fd515937700>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7fd515940550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 48, in load_users
+    user_collection.database.insert_many(users).execute()
+    │               │                    └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+    │               └ <peewee.SqliteDatabase object at 0x7fd514bbfeb0>
+    └ <users.UserCollection object at 0x7fd515937700>
+
+AttributeError: 'SqliteDatabase' object has no attribute 'insert_many'
+2021-08-17 22:32:12.928 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 22:32:12.936 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 22:32:12.936 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 22:32:21.873 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10159), thread 'MainThread' (4577418752):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7fb08d121e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7fb08d121940>, 'B': <function load_status_updates at 0x7fb08d1218b0>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7fb08d08ff40>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7fb08d142550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 49, in load_users
+    user_collection.database.UsersTable.insert_many(users).execute()
+    │               │                               └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+    │               └ <peewee.SqliteDatabase object at 0x7fb08b3b9f10>
+    └ <users.UserCollection object at 0x7fb08d08ff40>
+
+AttributeError: 'SqliteDatabase' object has no attribute 'UsersTable'
+2021-08-17 22:34:22.878 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 22:34:22.884 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 22:34:22.884 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 22:34:30.945 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10185), thread 'MainThread' (4385930752):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7ff5bf122e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7ff5bf122940>, 'B': <function load_status_updates at 0x7ff5bf1228b0>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7ff5bf0a7f10>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7ff5bf142550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 49, in load_users
+    user_collection.database.UsersTable.insert_many(users).execute()
+    │               │                               └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+    │               └ <peewee.SqliteDatabase object at 0x7ff5bdbbef40>
+    └ <users.UserCollection object at 0x7ff5bf0a7f10>
+
+AttributeError: 'SqliteDatabase' object has no attribute 'UsersTable'
+2021-08-17 22:39:43.513 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 22:39:43.520 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 22:39:43.520 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 22:39:50.794 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10263), thread 'MainThread' (4530556416):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7fe3c9922e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7fe3c99228b0>, 'B': <function load_status_updates at 0x7fe3c9922940>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7fe3c988ff40>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7fe3c9942550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 49, in load_users
+    UsersTable.insert_many(users).execute()
+                           └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+
+NameError: name 'UsersTable' is not defined
+2021-08-17 22:40:41.015 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 22:40:41.024 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 22:40:41.024 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 22:40:51.599 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10280), thread 'MainThread' (4630597120):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7fcfad121e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7fcfad121940>, 'B': <function load_status_updates at 0x7fcfad1218b0>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7fcfad08ff40>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7fcfad141550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 50, in load_users
+    UsersTable.insert_many(users).execute()
+    │          │           └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+    │          └ <classmethod object at 0x7fcfad1351c0>
+    └ <Model: UsersTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7fcfac3bef10>
+           │      └ <peewee.ModelInsert object at 0x7fcfad0b2520>
+           └ <function BaseQuery.execute at 0x7fcfad0fb160>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7fcfac3bef10>
+           │    └ <function Insert._execute at 0x7fcfad1043a0>
+           └ <peewee.ModelInsert object at 0x7fcfad0b2520>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7fcfac3bef10>
+                 │       └ <peewee.ModelInsert object at 0x7fcfad0b2520>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7fcfad0b2520>
+             │        └ <function Database.execute at 0x7fcfad10eaf0>
+             └ <peewee.SqliteDatabase object at 0x7fcfac3bef10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3156, in execute
+    sql, params = ctx.sql(query).query()
+                  │   │   └ <peewee.ModelInsert object at 0x7fcfad0b2520>
+                  │   └ <function Context.sql at 0x7fcfad0e1d30>
+                  └ <peewee.Context object at 0x7fcfad1ce540>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 613, in sql
+    return obj.__sql__(self)
+           │   │       └ <peewee.Context object at 0x7fcfad1ce540>
+           │   └ <function Insert.__sql__ at 0x7fcfad104310>
+           └ <peewee.ModelInsert object at 0x7fcfad0b2520>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2730, in __sql__
+    self._generate_insert(self._insert, ctx)
+    │    │                │    │        └ <peewee.Context object at 0x7fcfad1ce540>
+    │    │                │    └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+    │    │                └ <peewee.ModelInsert object at 0x7fcfad0b2520>
+    │    └ <function Insert._generate_insert at 0x7fcfad104160>
+    └ <peewee.ModelInsert object at 0x7fcfad0b2520>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2610, in _generate_insert
+    column = getattr(self.table, column)
+                     │    │      └ 'USER_ID'
+                     │    └ <Model: UsersTable>
+                     └ <peewee.ModelInsert object at 0x7fcfad0b2520>
+
+AttributeError: type object 'UsersTable' has no attribute 'USER_ID'
+2021-08-17 22:49:08.964 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 22:49:08.971 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 22:49:08.972 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 22:49:16.936 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10354), thread 'MainThread' (4684525056):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7fe055122e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7fe055122940>, 'B': <function load_status_updates at 0x7fe0551228b0>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7fe05508ff40>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7fe055142550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 50, in load_users
+    UsersTable.insert_many(users, id = USER_ID, name= NAME, last_name = LASTNAME, user_email = EMAIL).execute()
+    │          │           └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+    │          └ <classmethod object at 0x7fe0551351c0>
+    └ <Model: UsersTable>
+
+NameError: name 'USER_ID' is not defined
+2021-08-17 22:50:57.185 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 22:50:57.191 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 22:50:57.192 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 22:51:02.762 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10372), thread 'MainThread' (4415036928):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7fcefa922e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7fcefa922940>, 'B': <function load_status_updates at 0x7fcefa9228b0>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7fcefa88ff40>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7fcefa942550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 50, in load_users
+    UsersTable.insert_many(users, USER_ID = id, NAME = name, LASTNAME = last_name, EMAIL = user_email).execute()
+    │          │           └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+    │          └ <classmethod object at 0x7fcefa9351c0>
+    └ <Model: UsersTable>
+
+NameError: name 'name' is not defined
+2021-08-17 22:52:45.384 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 22:52:45.392 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 22:52:45.392 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 22:52:51.648 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10385), thread 'MainThread' (4729970176):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7fc19b122e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7fc19b1228b0>, 'B': <function load_status_updates at 0x7fc19b122940>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7fc19b08ff70>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7fc19b142550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 50, in load_users
+    UsersTable.insert_many(users, fields = fields).execute()
+    │          │           └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+    │          └ <classmethod object at 0x7fc19b1351f0>
+    └ <Model: UsersTable>
+
+NameError: name 'fields' is not defined
+2021-08-17 22:59:24.737 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 22:59:24.752 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 22:59:24.752 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 22:59:31.022 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10421), thread 'MainThread' (4579413504):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7f82a911ee50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7f82a911e940>, 'B': <function load_status_updates at 0x7f82a911e8b0>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7f82a908ff70>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7f82a9143550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 50, in load_users
+    UsersTable.insert_many(users, fields = [UsersTable.id, UsersTable.name. UsersTable.last_name,UsersTable.user_email]).execute()
+    │          │           │                │          │   │          │                          │          └ <peewee.FieldAccessor object at 0x7f82a73e40a0>
+    │          │           │                │          │   │          │                          └ <Model: UsersTable>
+    │          │           │                │          │   │          └ <peewee.FieldAccessor object at 0x7f82a73ddb80>
+    │          │           │                │          │   └ <Model: UsersTable>
+    │          │           │                │          └ <peewee.FieldAccessor object at 0x7f82a73ddaf0>
+    │          │           │                └ <Model: UsersTable>
+    │          │           └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+    │          └ <classmethod object at 0x7f82a91361f0>
+    └ <Model: UsersTable>
+
+AttributeError: 'CharField' object has no attribute 'UsersTable'
+2021-08-17 23:00:55.424 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 23:00:55.433 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:00:55.434 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:01:01.967 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10440), thread 'MainThread' (4661476864):
+Traceback (most recent call last):
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2671, in _generate_insert
+    raise KeyError
+
+KeyError
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7ffcca122e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7ffcca1228b0>, 'B': <function load_status_updates at 0x7ffcca122940>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7ffcca063e80>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7ffcca143550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 50, in load_users
+    UsersTable.insert_many(users, fields = [UsersTable.id, UsersTable.name, UsersTable.last_name,UsersTable.user_email]).execute()
+    │          │           │                │          │   │          │     │          │         │          └ <peewee.FieldAccessor object at 0x7ffcca142a30>
+    │          │           │                │          │   │          │     │          │         └ <Model: UsersTable>
+    │          │           │                │          │   │          │     │          └ <peewee.FieldAccessor object at 0x7ffcca1427c0>
+    │          │           │                │          │   │          │     └ <Model: UsersTable>
+    │          │           │                │          │   │          └ <peewee.FieldAccessor object at 0x7ffcca142100>
+    │          │           │                │          │   └ <Model: UsersTable>
+    │          │           │                │          └ <peewee.FieldAccessor object at 0x7ffcca1421f0>
+    │          │           │                └ <Model: UsersTable>
+    │          │           └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+    │          └ <classmethod object at 0x7ffcca1361f0>
+    └ <Model: UsersTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7ffcca142760>
+           │      └ <peewee.ModelInsert object at 0x7ffcca0826a0>
+           └ <function BaseQuery.execute at 0x7ffcca0fb160>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7ffcca142760>
+           │    └ <function Insert._execute at 0x7ffcca1043a0>
+           └ <peewee.ModelInsert object at 0x7ffcca0826a0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7ffcca142760>
+                 │       └ <peewee.ModelInsert object at 0x7ffcca0826a0>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7ffcca0826a0>
+             │        └ <function Database.execute at 0x7ffcca10eaf0>
+             └ <peewee.SqliteDatabase object at 0x7ffcca142760>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3156, in execute
+    sql, params = ctx.sql(query).query()
+                  │   │   └ <peewee.ModelInsert object at 0x7ffcca0826a0>
+                  │   └ <function Context.sql at 0x7ffcca0e1d30>
+                  └ <peewee.Context object at 0x7ffcca1ce5e0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 613, in sql
+    return obj.__sql__(self)
+           │   │       └ <peewee.Context object at 0x7ffcca1ce5e0>
+           │   └ <function Insert.__sql__ at 0x7ffcca104310>
+           └ <peewee.ModelInsert object at 0x7ffcca0826a0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2730, in __sql__
+    self._generate_insert(self._insert, ctx)
+    │    │                │    │        └ <peewee.Context object at 0x7ffcca1ce5e0>
+    │    │                │    └ [{'USER_ID': 'Brittaney.Gentry86', 'NAME': 'Brittaney', 'LASTNAME': 'Gentry', 'EMAIL': 'Brittaney.Gentry86@goodmail.com'}, {'...
+    │    │                └ <peewee.ModelInsert object at 0x7ffcca0826a0>
+    │    └ <function Insert._generate_insert at 0x7ffcca104160>
+    └ <peewee.ModelInsert object at 0x7ffcca0826a0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2682, in _generate_insert
+    raise ValueError('Missing value for %s.' % column.name)
+                                               │      └ 'id'
+                                               └ <CharField: UsersTable.id>
+
+ValueError: Missing value for id.
+2021-08-17 23:07:50.047 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 23:07:50.064 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:07:50.064 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:07:55.912 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10594), thread 'MainThread' (4481932800):
+Traceback (most recent call last):
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2671, in _generate_insert
+    raise KeyError
+
+KeyError
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7f8839122e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7f8839122940>, 'B': <function load_status_updates at 0x7f88391228b0>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7f883908ff70>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7f8839142550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 52, in load_users
+    UsersTable.insert_many(users, fields = [UsersTable.id, UsersTable.name, UsersTable.last_name,UsersTable.user_email]).execute()
+    │          │           │                │          │   │          │     │          │         │          └ <peewee.FieldAccessor object at 0x7f8837bea0a0>
+    │          │           │                │          │   │          │     │          │         └ <Model: UsersTable>
+    │          │           │                │          │   │          │     │          └ <peewee.FieldAccessor object at 0x7f8837be2e80>
+    │          │           │                │          │   │          │     └ <Model: UsersTable>
+    │          │           │                │          │   │          └ <peewee.FieldAccessor object at 0x7f8837be2b80>
+    │          │           │                │          │   └ <Model: UsersTable>
+    │          │           │                │          └ <peewee.FieldAccessor object at 0x7f8837be2af0>
+    │          │           │                └ <Model: UsersTable>
+    │          │           └ [{'USER_ID': 'Brittaney.Gentry86'}, {'NAME': 'Brittaney'}, {'LASTNAME': 'Gentry'}, {'EMAIL': 'Brittaney.Gentry86@goodmail.com...
+    │          └ <classmethod object at 0x7f88391351f0>
+    └ <Model: UsersTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7f8837bbef40>
+           │      └ <peewee.ModelInsert object at 0x7f88390b3550>
+           └ <function BaseQuery.execute at 0x7f88390fb160>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7f8837bbef40>
+           │    └ <function Insert._execute at 0x7f88391043a0>
+           └ <peewee.ModelInsert object at 0x7f88390b3550>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7f8837bbef40>
+                 │       └ <peewee.ModelInsert object at 0x7f88390b3550>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7f88390b3550>
+             │        └ <function Database.execute at 0x7f883910eaf0>
+             └ <peewee.SqliteDatabase object at 0x7f8837bbef40>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3156, in execute
+    sql, params = ctx.sql(query).query()
+                  │   │   └ <peewee.ModelInsert object at 0x7f88390b3550>
+                  │   └ <function Context.sql at 0x7f88390e1d30>
+                  └ <peewee.Context object at 0x7f883927e4f0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 613, in sql
+    return obj.__sql__(self)
+           │   │       └ <peewee.Context object at 0x7f883927e4f0>
+           │   └ <function Insert.__sql__ at 0x7f8839104310>
+           └ <peewee.ModelInsert object at 0x7f88390b3550>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2730, in __sql__
+    self._generate_insert(self._insert, ctx)
+    │    │                │    │        └ <peewee.Context object at 0x7f883927e4f0>
+    │    │                │    └ [{'USER_ID': 'Brittaney.Gentry86'}, {'NAME': 'Brittaney'}, {'LASTNAME': 'Gentry'}, {'EMAIL': 'Brittaney.Gentry86@goodmail.com...
+    │    │                └ <peewee.ModelInsert object at 0x7f88390b3550>
+    │    └ <function Insert._generate_insert at 0x7f8839104160>
+    └ <peewee.ModelInsert object at 0x7f88390b3550>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2682, in _generate_insert
+    raise ValueError('Missing value for %s.' % column.name)
+                                               │      └ 'id'
+                                               └ <CharField: UsersTable.id>
+
+ValueError: Missing value for id.
+2021-08-17 23:11:37.675 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 23:11:37.681 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:11:37.681 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:11:43.673 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10627), thread 'MainThread' (4593077760):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7fb409121e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7fb4091218b0>, 'B': <function load_status_updates at 0x7fb409121940>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7fb40908ff40>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7fb409142550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 56, in load_users
+    UsersTable.insert_many(users).execute()
+    │          │           └ [{'_id': 'Brittaney.Gentry86', 'email': 'Brittaney.Gentry86@goodmail.com', 'user_name': 'Brittaney', 'user_last_name': 'Gentr...
+    │          └ <classmethod object at 0x7fb4091351c0>
+    └ <Model: UsersTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7fb407bb9f10>
+           │      └ <peewee.ModelInsert object at 0x7fb4090b2520>
+           └ <function BaseQuery.execute at 0x7fb4090fb160>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7fb407bb9f10>
+           │    └ <function Insert._execute at 0x7fb4091043a0>
+           └ <peewee.ModelInsert object at 0x7fb4090b2520>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7fb407bb9f10>
+                 │       └ <peewee.ModelInsert object at 0x7fb4090b2520>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7fb4090b2520>
+             │        └ <function Database.execute at 0x7fb40910eaf0>
+             └ <peewee.SqliteDatabase object at 0x7fb407bb9f10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3156, in execute
+    sql, params = ctx.sql(query).query()
+                  │   │   └ <peewee.ModelInsert object at 0x7fb4090b2520>
+                  │   └ <function Context.sql at 0x7fb4090e1d30>
+                  └ <peewee.Context object at 0x7fb40927c770>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 613, in sql
+    return obj.__sql__(self)
+           │   │       └ <peewee.Context object at 0x7fb40927c770>
+           │   └ <function Insert.__sql__ at 0x7fb409104310>
+           └ <peewee.ModelInsert object at 0x7fb4090b2520>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2730, in __sql__
+    self._generate_insert(self._insert, ctx)
+    │    │                │    │        └ <peewee.Context object at 0x7fb40927c770>
+    │    │                │    └ [{'_id': 'Brittaney.Gentry86', 'email': 'Brittaney.Gentry86@goodmail.com', 'user_name': 'Brittaney', 'user_last_name': 'Gentr...
+    │    │                └ <peewee.ModelInsert object at 0x7fb4090b2520>
+    │    └ <function Insert._generate_insert at 0x7fb409104160>
+    └ <peewee.ModelInsert object at 0x7fb4090b2520>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2610, in _generate_insert
+    column = getattr(self.table, column)
+                     │    │      └ '_id'
+                     │    └ <Model: UsersTable>
+                     └ <peewee.ModelInsert object at 0x7fb4090b2520>
+
+AttributeError: type object 'UsersTable' has no attribute '_id'
+2021-08-17 23:12:13.406 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 23:12:13.416 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:12:13.416 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:12:17.763 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10635), thread 'MainThread' (4521524736):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7ff774121e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7ff774121940>, 'B': <function load_status_updates at 0x7ff7741218b0>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7ff7740a7ee0>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7ff774142550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 56, in load_users
+    UsersTable.insert_many(users).execute()
+    │          │           └ [{'id': 'Brittaney.Gentry86', 'email': 'Brittaney.Gentry86@goodmail.com', 'user_name': 'Brittaney', 'user_last_name': 'Gentry...
+    │          └ <classmethod object at 0x7ff7741351c0>
+    └ <Model: UsersTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7ff7733bef10>
+           │      └ <peewee.ModelInsert object at 0x7ff7740b2670>
+           └ <function BaseQuery.execute at 0x7ff7740fb160>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7ff7733bef10>
+           │    └ <function Insert._execute at 0x7ff7741033a0>
+           └ <peewee.ModelInsert object at 0x7ff7740b2670>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7ff7733bef10>
+                 │       └ <peewee.ModelInsert object at 0x7ff7740b2670>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7ff7740b2670>
+             │        └ <function Database.execute at 0x7ff77410eaf0>
+             └ <peewee.SqliteDatabase object at 0x7ff7733bef10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3156, in execute
+    sql, params = ctx.sql(query).query()
+                  │   │   └ <peewee.ModelInsert object at 0x7ff7740b2670>
+                  │   └ <function Context.sql at 0x7ff7740e0d30>
+                  └ <peewee.Context object at 0x7ff77427c720>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 613, in sql
+    return obj.__sql__(self)
+           │   │       └ <peewee.Context object at 0x7ff77427c720>
+           │   └ <function Insert.__sql__ at 0x7ff774103310>
+           └ <peewee.ModelInsert object at 0x7ff7740b2670>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2730, in __sql__
+    self._generate_insert(self._insert, ctx)
+    │    │                │    │        └ <peewee.Context object at 0x7ff77427c720>
+    │    │                │    └ [{'id': 'Brittaney.Gentry86', 'email': 'Brittaney.Gentry86@goodmail.com', 'user_name': 'Brittaney', 'user_last_name': 'Gentry...
+    │    │                └ <peewee.ModelInsert object at 0x7ff7740b2670>
+    │    └ <function Insert._generate_insert at 0x7ff774103160>
+    └ <peewee.ModelInsert object at 0x7ff7740b2670>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2610, in _generate_insert
+    column = getattr(self.table, column)
+                     │    │      └ 'email'
+                     │    └ <Model: UsersTable>
+                     └ <peewee.ModelInsert object at 0x7ff7740b2670>
+
+AttributeError: type object 'UsersTable' has no attribute 'email'
+2021-08-17 23:13:14.197 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 23:13:14.209 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:13:14.209 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:13:18.885 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10648), thread 'MainThread' (4672597504):
+Traceback (most recent call last):
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+    │      │       └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7f809b093b90>
+
+sqlite3.IntegrityError: UNIQUE constraint failed: userstable.id
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7f809b121e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7f809b121940>, 'B': <function load_status_updates at 0x7f809b1218b0>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7f809b0a7eb0>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7f809b142550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 56, in load_users
+    UsersTable.insert_many(users).execute()
+    │          │           └ [{'id': 'Brittaney.Gentry86', 'name': 'Brittaney', 'last_name': 'Gentry', 'user_email': 'Brittaney.Gentry86@goodmail.com'}, {...
+    │          └ <classmethod object at 0x7f809b1351c0>
+    └ <Model: UsersTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7f8099bb9f10>
+           │      └ <peewee.ModelInsert object at 0x7f809b0b2670>
+           └ <function BaseQuery.execute at 0x7f809b0fb160>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7f8099bb9f10>
+           │    └ <function Insert._execute at 0x7f809b1033a0>
+           └ <peewee.ModelInsert object at 0x7f809b0b2670>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7f8099bb9f10>
+                 │       └ <peewee.ModelInsert object at 0x7f809b0b2670>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7f809b0b2670>
+             │        └ <function Database.execute at 0x7f809b10eaf0>
+             └ <peewee.SqliteDatabase object at 0x7f8099bb9f10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3157, in execute
+    return self.execute_sql(sql, params, commit=commit)
+           │    │           │    │              └ <object object at 0x7f809b0b5080>
+           │    │           │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+           │    │           └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+           │    └ <function Database.execute_sql at 0x7f809b10ea60>
+           └ <peewee.SqliteDatabase object at 0x7f8099bb9f10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3151, in execute_sql
+    self.commit()
+    │    └ <function Database.commit at 0x7f809b110790>
+    └ <peewee.SqliteDatabase object at 0x7f8099bb9f10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2917, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+    │       │         │        │           │          └ <traceback object at 0x7f8099e8f8c0>
+    │       │         │        │           └ ('UNIQUE constraint failed: userstable.id',)
+    │       │         │        └ IntegrityError('UNIQUE constraint failed: userstable.id')
+    │       │         └ <class 'peewee.IntegrityError'>
+    │       └ <class 'peewee.IntegrityError'>
+    └ <function reraise at 0x7f809b0d2e50>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 190, in reraise
+    raise value.with_traceback(tb)
+          │     │              └ <traceback object at 0x7f8099e8f8c0>
+          │     └ <method 'with_traceback' of 'BaseException' objects>
+          └ IntegrityError('UNIQUE constraint failed: userstable.id')
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+    │      │       └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7f809b093b90>
+
+peewee.IntegrityError: UNIQUE constraint failed: userstable.id
+2021-08-17 23:14:56.036 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 23:14:56.078 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:14:56.078 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:14:58.666 | DEBUG    | __main__:<module>:195 - __name__:__main__
+2021-08-17 23:14:58.671 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:14:58.671 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:15:09.727 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10671), thread 'MainThread' (4744191488):
+Traceback (most recent call last):
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+    │      │       └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7fb907091b90>
+
+sqlite3.OperationalError: no such table: userstable
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 198, in <module>
+    menu()
+    └ <function menu at 0x7fb907127e50>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 189, in menu
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7fb9071278b0>, 'B': <function load_status_updates at 0x7fb907127940>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 25, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7fb9070a5e80>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7fb907141550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 56, in load_users
+    UsersTable.insert_many(users).execute()
+    │          │           └ [{'id': 'Brittaney.Gentry86', 'name': 'Brittaney', 'last_name': 'Gentry', 'user_email': 'Brittaney.Gentry86@goodmail.com'}, {...
+    │          └ <classmethod object at 0x7fb907134160>
+    └ <Model: UsersTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7fb9063b4eb0>
+           │      └ <peewee.ModelInsert object at 0x7fb9070b0610>
+           └ <function BaseQuery.execute at 0x7fb9070fa160>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7fb9063b4eb0>
+           │    └ <function Insert._execute at 0x7fb9071023a0>
+           └ <peewee.ModelInsert object at 0x7fb9070b0610>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7fb9063b4eb0>
+                 │       └ <peewee.ModelInsert object at 0x7fb9070b0610>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7fb9070b0610>
+             │        └ <function Database.execute at 0x7fb90710caf0>
+             └ <peewee.SqliteDatabase object at 0x7fb9063b4eb0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3157, in execute
+    return self.execute_sql(sql, params, commit=commit)
+           │    │           │    │              └ <object object at 0x7fb9070b4080>
+           │    │           │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+           │    │           └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+           │    └ <function Database.execute_sql at 0x7fb90710ca60>
+           └ <peewee.SqliteDatabase object at 0x7fb9063b4eb0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3151, in execute_sql
+    self.commit()
+    │    └ <function Database.commit at 0x7fb90710e790>
+    └ <peewee.SqliteDatabase object at 0x7fb9063b4eb0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2917, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+    │       │         │        │           │          └ <traceback object at 0x7fb906686d00>
+    │       │         │        │           └ ('no such table: userstable',)
+    │       │         │        └ OperationalError('no such table: userstable')
+    │       │         └ <class 'peewee.OperationalError'>
+    │       └ <class 'peewee.OperationalError'>
+    └ <function reraise at 0x7fb9070d1e50>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 190, in reraise
+    raise value.with_traceback(tb)
+          │     │              └ <traceback object at 0x7fb906686d00>
+          │     └ <method 'with_traceback' of 'BaseException' objects>
+          └ OperationalError('no such table: userstable')
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+    │      │       └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7fb907091b90>
+
+peewee.OperationalError: no such table: userstable
+2021-08-17 23:25:32.214 | DEBUG    | __main__:<module>:157 - __name__:__main__
+2021-08-17 23:25:32.218 | ERROR    | __main__:<module>:198 - An error has been caught in function '<module>', process 'MainProcess' (10838), thread 'MainThread' (4472925696):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 162, in <module>
+    UsersTable,
+
+NameError: name 'UsersTable' is not defined
+2021-08-17 23:26:16.439 | DEBUG    | __main__:<module>:156 - __name__:__main__
+2021-08-17 23:26:16.451 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:26:16.451 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:26:26.477 | ERROR    | __main__:<module>:197 - An error has been caught in function '<module>', process 'MainProcess' (10844), thread 'MainThread' (4568292864):
+Traceback (most recent call last):
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+    │      │       └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7ff7fb8766c0>
+
+sqlite3.IntegrityError: UNIQUE constraint failed: userstable.id
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 195, in <module>
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7ff7fb928790>, 'B': <function load_status_updates at 0x7ff7fb928820>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 24, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7ff7fb8a6eb0>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7ff7fb90c430>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 56, in load_users
+    UsersTable.insert_many(users).execute()
+    │          │           └ [{'id': 'Brittaney.Gentry86', 'name': 'Brittaney', 'last_name': 'Gentry', 'user_email': 'Brittaney.Gentry86@goodmail.com'}, {...
+    │          └ <classmethod object at 0x7ff7fb935190>
+    └ <Model: UsersTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7ff7fa3b9ee0>
+           │      └ <peewee.ModelInsert object at 0x7ff7fb8b1640>
+           └ <function BaseQuery.execute at 0x7ff7fb8f90d0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7ff7fa3b9ee0>
+           │    └ <function Insert._execute at 0x7ff7fb902310>
+           └ <peewee.ModelInsert object at 0x7ff7fb8b1640>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7ff7fa3b9ee0>
+                 │       └ <peewee.ModelInsert object at 0x7ff7fb8b1640>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7ff7fb8b1640>
+             │        └ <function Database.execute at 0x7ff7fb90da60>
+             └ <peewee.SqliteDatabase object at 0x7ff7fa3b9ee0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3157, in execute
+    return self.execute_sql(sql, params, commit=commit)
+           │    │           │    │              └ <object object at 0x7ff7fb8b3080>
+           │    │           │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+           │    │           └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+           │    └ <function Database.execute_sql at 0x7ff7fb90d9d0>
+           └ <peewee.SqliteDatabase object at 0x7ff7fa3b9ee0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3151, in execute_sql
+    self.commit()
+    │    └ <function Database.commit at 0x7ff7fb90e700>
+    └ <peewee.SqliteDatabase object at 0x7ff7fa3b9ee0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2917, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+    │       │         │        │           │          └ <traceback object at 0x7ff7fba7fbc0>
+    │       │         │        │           └ ('UNIQUE constraint failed: userstable.id',)
+    │       │         │        └ IntegrityError('UNIQUE constraint failed: userstable.id')
+    │       │         └ <class 'peewee.IntegrityError'>
+    │       └ <class 'peewee.IntegrityError'>
+    └ <function reraise at 0x7ff7fb8d2dc0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 190, in reraise
+    raise value.with_traceback(tb)
+          │     │              └ <traceback object at 0x7ff7fba7fbc0>
+          │     └ <method 'with_traceback' of 'BaseException' objects>
+          └ IntegrityError('UNIQUE constraint failed: userstable.id')
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+    │      │       └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7ff7fb8766c0>
+
+peewee.IntegrityError: UNIQUE constraint failed: userstable.id
+2021-08-17 23:26:53.485 | DEBUG    | __main__:<module>:156 - __name__:__main__
+2021-08-17 23:26:53.502 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:26:53.503 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:26:58.769 | ERROR    | __main__:<module>:197 - An error has been caught in function '<module>', process 'MainProcess' (10857), thread 'MainThread' (4610309632):
+Traceback (most recent call last):
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+    │      │       └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7fdbff8766c0>
+
+sqlite3.IntegrityError: UNIQUE constraint failed: userstable.id
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 195, in <module>
+    menu_options[user_selection]()
+    │            └ 'A'
+    └ {'A': <function load_users at 0x7fdbff928820>, 'B': <function load_status_updates at 0x7fdbff928790>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 24, in load_users
+    if not main.load_users(filename, user_collection):
+           │    │          │         └ <users.UserCollection object at 0x7fdbff8a6eb0>
+           │    │          └ 'accounts.csv'
+           │    └ <function load_users at 0x7fdbff916430>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 56, in load_users
+    UsersTable.insert_many(users).execute()
+    │          │           └ [{'id': 'Brittaney.Gentry86', 'name': 'Brittaney', 'last_name': 'Gentry', 'user_email': 'Brittaney.Gentry86@goodmail.com'}, {...
+    │          └ <classmethod object at 0x7fdbff935190>
+    └ <Model: UsersTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7fdbfe3b1ee0>
+           │      └ <peewee.ModelInsert object at 0x7fdbff8b1640>
+           └ <function BaseQuery.execute at 0x7fdbff8f90d0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7fdbfe3b1ee0>
+           │    └ <function Insert._execute at 0x7fdbff902310>
+           └ <peewee.ModelInsert object at 0x7fdbff8b1640>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7fdbfe3b1ee0>
+                 │       └ <peewee.ModelInsert object at 0x7fdbff8b1640>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7fdbff8b1640>
+             │        └ <function Database.execute at 0x7fdbff90da60>
+             └ <peewee.SqliteDatabase object at 0x7fdbfe3b1ee0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3157, in execute
+    return self.execute_sql(sql, params, commit=commit)
+           │    │           │    │              └ <object object at 0x7fdbff8b3080>
+           │    │           │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+           │    │           └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+           │    └ <function Database.execute_sql at 0x7fdbff90d9d0>
+           └ <peewee.SqliteDatabase object at 0x7fdbfe3b1ee0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3151, in execute_sql
+    self.commit()
+    │    └ <function Database.commit at 0x7fdbff90e700>
+    └ <peewee.SqliteDatabase object at 0x7fdbfe3b1ee0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2917, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+    │       │         │        │           │          └ <traceback object at 0x7fdbffdfcf00>
+    │       │         │        │           └ ('UNIQUE constraint failed: userstable.id',)
+    │       │         │        └ IntegrityError('UNIQUE constraint failed: userstable.id')
+    │       │         └ <class 'peewee.IntegrityError'>
+    │       └ <class 'peewee.IntegrityError'>
+    └ <function reraise at 0x7fdbff8d2dc0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 190, in reraise
+    raise value.with_traceback(tb)
+          │     │              └ <traceback object at 0x7fdbffdfcf00>
+          │     └ <method 'with_traceback' of 'BaseException' objects>
+          └ IntegrityError('UNIQUE constraint failed: userstable.id')
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Brittaney.Gentry86', 'Brittaney', 'Gentry', 'Brittaney.Gentry86@goodmail.com', 'Brittaney.Gentry86', 'Brittaney', 'Gentry',...
+    │      │       └ 'INSERT INTO "userstable" ("id", "name", "last_name", "user_email") VALUES (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?, ?), (?, ?, ?...
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7fdbff8766c0>
+
+peewee.IntegrityError: UNIQUE constraint failed: userstable.id
+2021-08-17 23:31:46.196 | DEBUG    | __main__:<module>:156 - __name__:__main__
+2021-08-17 23:31:46.203 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:31:46.203 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:36:29.744 | DEBUG    | __main__:<module>:156 - __name__:__main__
+2021-08-17 23:36:29.748 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:36:29.748 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:36:50.060 | ERROR    | __main__:<module>:197 - An error has been caught in function '<module>', process 'MainProcess' (11071), thread 'MainThread' (4479892992):
+Traceback (most recent call last):
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Isabel.Avivah34_27', 'Isabel.Avivah34', 'thinkable existence hug aback sky', 'Benedetta.Zola9_758', 'Benedetta.Zola9', 'coo...
+    │      │       └ 'INSERT INTO "statustable" ("status_id", "id_id", "status_text") VALUES (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?)...
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7fc314a15730>
+
+sqlite3.OperationalError: too many SQL variables
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 195, in <module>
+    menu_options[user_selection]()
+    │            └ 'B'
+    └ {'A': <function load_users at 0x7fc31192c790>, 'B': <function load_status_updates at 0x7fc31192c820>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 35, in load_status_updates
+    if not main.load_status_updates(filename, status_collection):
+           │    │                   │         └ <user_status.UserStatusCollection object at 0x7fc3118b2520>
+           │    │                   └ 'status_updates.csv'
+           │    └ <function load_status_updates at 0x7fc31190e550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 106, in load_status_updates
+    StatusTable.insert_many(list_of_status).execute()
+    │           │           └ [{'status_id': 'Isabel.Avivah34_27', 'id': 'Isabel.Avivah34', 'status_text': 'thinkable existence hug aback sky'}, {'status_i...
+    │           └ <classmethod object at 0x7fc3119351c0>
+    └ <Model: StatusTable>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1907, in inner
+    return method(self, database, *args, **kwargs)
+           │      │     │          │       └ {}
+           │      │     │          └ ()
+           │      │     └ <peewee.SqliteDatabase object at 0x7fc310bbaf10>
+           │      └ <peewee.ModelInsert object at 0x7fc3118b2070>
+           └ <function BaseQuery.execute at 0x7fc3118fa0d0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 1978, in execute
+    return self._execute(database)
+           │    │        └ <peewee.SqliteDatabase object at 0x7fc310bbaf10>
+           │    └ <function Insert._execute at 0x7fc311905310>
+           └ <peewee.ModelInsert object at 0x7fc3118b2070>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2745, in _execute
+    return super(Insert, self)._execute(database)
+                 │       │              └ <peewee.SqliteDatabase object at 0x7fc310bbaf10>
+                 │       └ <peewee.ModelInsert object at 0x7fc3118b2070>
+                 └ <class 'peewee.Insert'>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2474, in _execute
+    cursor = database.execute(self)
+             │        │       └ <peewee.ModelInsert object at 0x7fc3118b2070>
+             │        └ <function Database.execute at 0x7fc311910a60>
+             └ <peewee.SqliteDatabase object at 0x7fc310bbaf10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3157, in execute
+    return self.execute_sql(sql, params, commit=commit)
+           │    │           │    │              └ <object object at 0x7fc3118b5080>
+           │    │           │    └ ['Isabel.Avivah34_27', 'Isabel.Avivah34', 'thinkable existence hug aback sky', 'Benedetta.Zola9_758', 'Benedetta.Zola9', 'coo...
+           │    │           └ 'INSERT INTO "statustable" ("status_id", "id_id", "status_text") VALUES (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?)...
+           │    └ <function Database.execute_sql at 0x7fc3119109d0>
+           └ <peewee.SqliteDatabase object at 0x7fc310bbaf10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3151, in execute_sql
+    self.commit()
+    │    └ <function Database.commit at 0x7fc311911700>
+    └ <peewee.SqliteDatabase object at 0x7fc310bbaf10>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 2917, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+    │       │         │        │           │          └ <traceback object at 0x7fc3193cccc0>
+    │       │         │        │           └ ('too many SQL variables',)
+    │       │         │        └ OperationalError('too many SQL variables')
+    │       │         └ <class 'peewee.OperationalError'>
+    │       └ <class 'peewee.OperationalError'>
+    └ <function reraise at 0x7fc3118d4dc0>
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 190, in reraise
+    raise value.with_traceback(tb)
+          │     │              └ <traceback object at 0x7fc3193cccc0>
+          │     └ <method 'with_traceback' of 'BaseException' objects>
+          └ OperationalError('too many SQL variables')
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/venv/lib/python3.9/site-packages/peewee.py", line 3144, in execute_sql
+    cursor.execute(sql, params or ())
+    │      │       │    └ ['Isabel.Avivah34_27', 'Isabel.Avivah34', 'thinkable existence hug aback sky', 'Benedetta.Zola9_758', 'Benedetta.Zola9', 'coo...
+    │      │       └ 'INSERT INTO "statustable" ("status_id", "id_id", "status_text") VALUES (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?)...
+    │      └ <method 'execute' of 'sqlite3.Cursor' objects>
+    └ <sqlite3.Cursor object at 0x7fc314a15730>
+
+peewee.OperationalError: too many SQL variables
+2021-08-17 23:40:49.638 | DEBUG    | __main__:<module>:156 - __name__:__main__
+2021-08-17 23:40:49.643 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:40:49.644 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:40:59.609 | ERROR    | __main__:<module>:197 - An error has been caught in function '<module>', process 'MainProcess' (11102), thread 'MainThread' (4664778240):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 195, in <module>
+    menu_options[user_selection]()
+    │            └ 'B'
+    └ {'A': <function load_users at 0x7f953392c820>, 'B': <function load_status_updates at 0x7f953392c790>, 'C': <function add_user...
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/menu.py", line 35, in load_status_updates
+    if not main.load_status_updates(filename, status_collection):
+           │    │                   │         └ <user_status.UserStatusCollection object at 0x7f95338b2490>
+           │    │                   └ 'status_updates.csv'
+           │    └ <function load_status_updates at 0x7f953390e550>
+           └ <module 'main' from '/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py'>
+
+  File "/Users/inderjotbrar/Documents/_advancedpython/assignment03/assignment_03/src/assignment_03/main.py", line 107, in load_status_updates
+    for batch in chunked(list_of_status, 100):
+                         └ [{'status_id': 'Isabel.Avivah34_27', 'id': 'Isabel.Avivah34', 'status_text': 'thinkable existence hug aback sky'}, {'status_i...
+
+NameError: name 'chunked' is not defined
+2021-08-17 23:42:10.808 | DEBUG    | __main__:<module>:156 - __name__:__main__
+2021-08-17 23:42:10.813 | DEBUG    | users:__init__:19 - User Collection initialised
+2021-08-17 23:42:10.814 | DEBUG    | user_status:__init__:18 - User Status Collection initialised
+2021-08-17 23:45:07.168 | INFO     | users:add_user:29 - New User added: (abc_01, abc.xyz@test.com, abc, xyz)
+2021-08-17 23:45:30.559 | INFO     | users:modify_user:48 - User modified - new_email:abc.xyz@gmail.com, new_user_name:abc, new_user_last_name: xyz)
+2021-08-17 23:45:36.995 | INFO     | users:search_user:89 - abc_01 found in search database.
+2021-08-17 23:45:58.454 | INFO     | user_status:add_status:25 - New Status added: (abc_0001, abc_01, test message)
+2021-08-17 23:46:26.991 | WARNING  | user_status:modify_status:44 - status_id:abc_01 doesn't exist and cannot be modified.
+2021-08-17 23:46:39.488 | INFO     | user_status:modify_status:41 - Status modified - new_user_id:abc_02, new_status_text:test message)
+2021-08-17 23:50:42.245 | WARNING  | user_status:search_status:75 - status_id:abc_0001 not found in the database.
+2021-08-17 23:50:56.557 | WARNING  | user_status:search_status:75 - status_id:abc_0001 not found in the database.

@@ -1,0 +1,144 @@
+2021-09-08 10:54:18.152 | DEBUG    | __main__:<module>:186 - __name__:__main__
+2021-09-08 10:54:18.161 | DEBUG    | __main__:dataset_connection:38 - Error: Connection already opened.
+2021-09-08 10:54:18.162 | DEBUG    | __main__:dataset_connection:44 - Database closed
+2021-09-08 10:54:18.162 | ERROR    | __main__:<module>:222 - An error has been caught in function '<module>', process 'MainProcess' (66193), thread 'MainThread' (4513656320):
+Traceback (most recent call last):
+
+> File "/Users/inderjotbrar/Documents/_advancedpython/assignment09/menu.py", line 189, in <module>
+    with dataset_connection(connection_type) as db:
+         │                  └ 'sqlite:///socialnetwork.db'
+         └ <function dataset_connection at 0x7fe6989c9dc0>
+
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/contextlib.py", line 119, in __enter__
+    raise RuntimeError("generator didn't yield") from None
+
+RuntimeError: generator didn't yield
+2021-09-08 10:56:38.108 | DEBUG    | __main__:<module>:185 - __name__:__main__
+2021-09-08 10:56:38.117 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 10:56:38.139 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in dataset
+2021-09-08 10:56:38.158 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in dataset
+2021-09-08 10:56:38.172 | DEBUG    | socialnetwork_model:create_tables:42 - Picture Table created in dataset
+2021-09-08 10:58:03.108 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 12:33:00.206 | DEBUG    | __main__:<module>:219 - __name__:__main__
+2021-09-08 12:33:00.213 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 12:33:00.231 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 12:33:00.246 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 12:33:00.257 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 12:33:25.177 | INFO     | users:add_user:44 - New User added: (abc01, abc.xyz@test.com, abc, xyz)
+2021-09-08 12:33:50.351 | DEBUG    | __main__:dataset_connection:37 - Error: 'function' object has no attribute 'add_image'
+2021-09-08 12:33:50.354 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 12:35:51.270 | DEBUG    | __main__:<module>:219 - __name__:__main__
+2021-09-08 12:35:51.284 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 12:35:51.301 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 12:35:51.309 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 12:35:51.318 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 12:35:58.828 | INFO     | users:search_user:90 - abc01 found in search database.
+2021-09-08 12:36:19.262 | DEBUG    | __main__:dataset_connection:37 - Error: 'function' object has no attribute 'add_image'
+2021-09-08 12:36:19.270 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 12:37:47.628 | DEBUG    | __main__:<module>:219 - __name__:__main__
+2021-09-08 12:37:47.672 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 12:37:47.694 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 12:37:47.716 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 12:37:47.756 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 12:37:59.726 | DEBUG    | __main__:dataset_connection:37 - Error: 'function' object has no attribute 'add_image'
+2021-09-08 12:37:59.736 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 12:44:02.013 | DEBUG    | __main__:<module>:219 - __name__:__main__
+2021-09-08 12:44:02.018 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 12:44:02.039 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 12:44:02.058 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 12:44:02.077 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 12:44:20.768 | INFO     | users:add_user:44 - New User added: (abc01, abc.xyz@test.com, abc, xyz)
+2021-09-08 12:44:52.462 | INFO     | user_status:add_status:42 - New Status added: (abc01_01, abc01, test message)
+2021-09-08 12:45:16.832 | DEBUG    | __main__:dataset_connection:37 - Error: 'function' object has no attribute 'add_image'
+2021-09-08 12:45:16.851 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 12:51:09.057 | DEBUG    | __main__:<module>:220 - __name__:__main__
+2021-09-08 12:51:09.067 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 12:51:09.075 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 12:51:09.085 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 12:51:09.093 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 12:51:22.876 | DEBUG    | list_user_images:check_image_constraints:27 - Tags can only contain upper and lower case letters and underscore
+2021-09-08 12:52:42.241 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 12:52:45.486 | DEBUG    | __main__:<module>:220 - __name__:__main__
+2021-09-08 12:52:45.491 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 12:52:45.496 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 12:52:45.501 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 12:52:45.507 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 12:53:08.763 | INFO     | list_user_images:add_image:50 - New Image added: (1, abc01, #car #sport)
+2021-09-08 12:53:08.764 | DEBUG    | __main__:dataset_connection:37 - Error: [Errno 9] Bad file descriptor
+2021-09-08 12:53:08.765 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 12:58:15.326 | DEBUG    | __main__:<module>:220 - __name__:__main__
+2021-09-08 12:58:15.335 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 12:58:15.341 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 12:58:15.346 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 12:58:15.351 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 12:58:37.972 | INFO     | list_user_images:add_image:50 - New Image added: (2, abc01, #sport #car at abc01/car/sport)
+2021-09-08 13:20:14.835 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 13:20:15.551 | DEBUG    | __main__:<module>:220 - __name__:__main__
+2021-09-08 13:20:15.560 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 13:20:15.567 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 13:20:15.574 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 13:20:15.580 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 13:20:26.881 | DEBUG    | __main__:dataset_connection:37 - Error: unsupported operand type(s) for +: 'PosixPath' and 'str'
+2021-09-08 13:20:26.883 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 13:21:38.894 | DEBUG    | __main__:<module>:220 - __name__:__main__
+2021-09-08 13:21:38.903 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 13:21:38.908 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 13:21:38.912 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 13:21:38.916 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 13:21:46.899 | INFO     | list_user_images:add_image:50 - New Image added: (4, abc01, #car #sport at abc01/car/sport)
+2021-09-08 16:13:22.113 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 16:13:51.952 | DEBUG    | __main__:<module>:222 - __name__:__main__
+2021-09-08 16:13:51.959 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 16:13:51.967 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 16:13:51.971 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 16:13:51.975 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 16:13:59.615 | INFO     | list_user_images:list_of_user_images:84 - 3 images found for user abc01
+2021-09-08 16:15:24.510 | DEBUG    | list_user_images:list_of_user_images:79 - user_id:abc01 doesn't have any images
+2021-09-08 16:16:10.591 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 16:16:27.204 | DEBUG    | __main__:<module>:222 - __name__:__main__
+2021-09-08 16:16:27.752 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 16:16:27.800 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 16:16:27.814 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 16:16:27.822 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 16:17:06.683 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 16:17:12.680 | DEBUG    | __main__:<module>:222 - __name__:__main__
+2021-09-08 16:17:12.698 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 16:17:12.726 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 16:17:12.744 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 16:17:12.755 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 16:17:30.911 | INFO     | users:add_user:44 - New User added: (abc01, abc.xyz@test.com, abc, xyz)
+2021-09-08 16:18:00.357 | INFO     | list_user_images:add_image:52 - New Image added: (1, abc01,  at abc01)
+2021-09-08 16:18:31.050 | INFO     | list_user_images:add_image:52 - New Image added: (2, abc01, #car #sport at abc01/car/sport)
+2021-09-08 16:18:38.827 | INFO     | list_user_images:list_of_user_images:84 - 2 images found for user abc01
+2021-09-08 16:19:09.857 | DEBUG    | list_user_images:list_of_user_images:79 - user_id:abc02 doesn't have any images
+2021-09-08 16:35:12.071 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 16:35:16.563 | DEBUG    | __main__:<module>:230 - __name__:__main__
+2021-09-08 16:35:16.570 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 16:35:16.576 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 16:35:16.580 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 16:35:16.584 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 16:35:24.092 | INFO     | list_user_images:list_of_user_images:84 - 2 images found for user abc01
+2021-09-08 16:36:39.518 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 16:36:43.702 | DEBUG    | __main__:<module>:232 - __name__:__main__
+2021-09-08 16:36:43.707 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 16:36:43.714 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 16:36:43.719 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 16:36:43.723 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 16:36:49.265 | INFO     | list_user_images:list_of_user_images:84 - 2 images found for user abc01
+2021-09-08 16:39:39.781 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 16:39:41.001 | DEBUG    | __main__:<module>:232 - __name__:__main__
+2021-09-08 16:39:41.009 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 16:39:41.017 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 16:39:41.022 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 16:39:41.030 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 16:39:47.207 | DEBUG    | list_user_images:reconcile_images:108 - user_id:ABC01 doesn't exist and images cannot be reconciled.
+2021-09-08 16:39:52.523 | INFO     | list_user_images:list_of_user_images:84 - 2 images found for user abc01
+2021-09-08 16:39:52.525 | DEBUG    | __main__:dataset_connection:37 - Error: <built-in function id>
+2021-09-08 16:39:52.526 | DEBUG    | __main__:dataset_connection:43 - Database closed
+2021-09-08 16:42:20.973 | DEBUG    | __main__:<module>:232 - __name__:__main__
+2021-09-08 16:42:20.990 | DEBUG    | __main__:dataset_connection:33 - Database opened
+2021-09-08 16:42:21.001 | DEBUG    | socialnetwork_model:create_tables:19 - User Table created in database
+2021-09-08 16:42:21.006 | DEBUG    | socialnetwork_model:create_tables:30 - Status Table created in database
+2021-09-08 16:42:21.010 | DEBUG    | socialnetwork_model:create_tables:39 - Picture Table created in database
+2021-09-08 16:42:27.459 | INFO     | list_user_images:list_of_user_images:84 - 2 images found for user abc01
+2021-09-08 16:42:48.553 | DEBUG    | __main__:dataset_connection:43 - Database closed

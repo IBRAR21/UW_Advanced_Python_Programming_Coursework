@@ -1,0 +1,6 @@
+2021-07-29 00:05:26.995 | DEBUG    | __main__:<module>:193 - __name__:__main__
+2021-07-29 00:05:27.005 | DEBUG    | users:__init__:18 - User Collection initialised
+2021-07-29 00:05:27.006 | DEBUG    | user_status:__init__:17 - User Status Collection initialised
+2021-07-29 00:05:59.959 | INFO     | users:add_user:28 - New User added: (1, abc@example.com, abc, xyz)
+2021-07-29 00:06:43.898 | INFO     | users:modify_user:47 - User modified - new_email:abc.xyz@example.com, new_user_name:abc, new_user_last_name: xyz)
+2021-07-29 00:07:44.881 | WARNING  | users:modify_user:51 - user_id:2 doesn't exist and cannot be modified.

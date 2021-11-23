@@ -1,0 +1,20 @@
+load_users         12447 function calls (12166 primitive calls) in 2.969 seconds
+
+load_status_updates         12180 function calls (12110 primitive calls) in 18.186 seconds
+
+add_user         653 function calls (648 primitive calls) in 0.006 seconds
+
+add_status         875 function calls (863 primitive calls) in 0.003 seconds
+
+update_user         906 function calls (894 primitive calls) in 0.003 seconds
+
+update_status         1333 function calls (1313 primitive calls) in 0.004 seconds
+
+search_user         947 function calls (931 primitive calls) in 0.003 seconds
+
+search_status         941 function calls (925 primitive calls) in 0.003 seconds
+
+delete_status         886 function calls (874 primitive calls) in 0.003 seconds
+
+delete_user         1244 function calls (1228 primitive calls) in 0.189 seconds
+

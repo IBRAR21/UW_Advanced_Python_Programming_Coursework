@@ -1,0 +1,5 @@
+2021-07-28 23:47:02.432 | DEBUG    | __main__:<module>:193 - __name__:__main__
+2021-07-28 23:47:02.444 | DEBUG    | users:__init__:18 - User Collection initialised
+2021-07-28 23:47:02.444 | DEBUG    | user_status:__init__:17 - User Status Collection initialised
+2021-07-28 23:47:56.674 | INFO     | users:add_user:28 - New User added: (1, abc@example.com, abc, xyz)
+2021-07-28 23:56:01.310 | WARNING  | users:add_user:31 - user_id:1 already exited in the database. Another entry cannot be made.
